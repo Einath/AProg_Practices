@@ -1,0 +1,33 @@
+#define N 10
+#define M 15
+
+#include <stdio.h>
+
+void main(){
+  int v1[N]; 
+  int v2[M]; 
+  int i=0; 
+
+  srand(getpid()); 
+
+  printf("Generando vectores...\n"); 
+
+  for(i=0; i<N; i++)
+    v1[i]=rand()%10 + 15; 
+
+  for(i=0; i<M; i++)
+    v2[i]=rand()%10 + 15; 
+
+  printf("N soldados: "); 
+  for(i=0; i<N; i++)
+    printf("%d ", v1[i]); 
+
+  printf("\nM soldados: "); 
+  for(i=0; i<M; i++)
+    printf("%d ", v2[i]); 
+
+  /* Ordenar los vectores con QS*/
+  /* Búsqueda DYV */
+
+
+}

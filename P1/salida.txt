@@ -1,0 +1,18 @@
+Generando vectores [10, 5]...
+
+N soldados: 16 19 19 21 23 27 28 29 34 34 
+M soldados: 18 21 24 25 32 
+16 18 19 19 21 21 23 JON 24 25 27 28 29 32 
+Calculando edad de Jon... 
+----- CASO GENERAL ----- 
+Xmed = 23
+Ymed = 24	 X: [0:16, 9:34] 	 Y: [0:18, 4:32]
+items/lado: 2
+---------
+----- CASO GENERAL ----- 
+Xmed = 27
+Ymed = 21	 X: [2:19, 9:34] 	 Y: [0:18, 2:24]
+items/lado: 1
+---------
+----- CASO BASE 5 ----- 
+Edad: 24
