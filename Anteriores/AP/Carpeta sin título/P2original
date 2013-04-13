@@ -1,0 +1,88 @@
+#include "orders.h"
+
+
+void pk (int v[LVECT], int p, int k, int resul[p]){
+  /*algoritmo p-k*/
+  int i=0,j=0, sup=k+1, inf=k-1; 
+  printf("\n===RESULTADO===\n");
+
+  if (p==LVECT-1){  /*CASO 1: Si p es tan grande como el vector - 1, se devolverán todos los elementos, salvo el k-ésimo */
+    for (i=0; i<p; i++){
+      if(i-k==0)
+	printf("K\t");
+      else
+	printf("%d\t", v[i]);
+    }
+  }
+
+  else if (p==1){ /*CASO 2: si p=1, sólo hay que devolver el anterior o posterior a K, el que esté más cerca*/
+    if((v[k]-v[k-1])<(v[k+1]-v[k]))
+      printf("%d\n", v[k-1]);
+    else
+      printf("%d\n", v[k+1]); /* se devuelve k+1 también en caso de igualdad*/
+  }
+
+  else{ /* CASO GENERICO */
+
+    for (j=0; j<p; j++){
+
+      if( (v[k]-v[inf]) < (v[sup]-v[k]) ){ 
+	  resul[j]=v[inf];
+	  v[inf]=-111;
+	  if(inf>0)
+	    inf--; 
+	}
+      else{ 
+	  resul[j]=v[sup];
+	  v[sup]=222;
+	  if(sup<LVECT-1)
+	    sup++;
+      }
+    }
+    for(i=0; i<p; i++)
+      printf("%d\t", resul[i]); 
+  }
+  printf("\n"); 
+}
+
+void main(){
+  int v[LVECT], i; /*vector de trabajo y vector resultado*/
+
+  /*generamos un p aleatorio*/
+  srand(getpid()); /*la semilla será el Pid del proceso*/
+
+  int p=(rand()%(LVECT-2))+1;  /* rango de p: [1, x] , x es la longitud del vector -1 (k-ésimo elemento)*/
+
+  /*generamos un k aleatorio*/
+
+  int k=rand()%(LVECT-1); /* rango de k: [0, LVECT -1] */
+
+
+  printf("Vector de números aleatorios:\n"); 
+  for (i=0; i<LVECT; i++)
+    v[i]=rand()%100;
+  printvec(v);
+
+
+  int resul[p]; 
+  for(i=0; i<p; i++)
+    resul[i]=-1;  /*vector de soluciones iniciado a -1*/
+
+
+
+  printf("\nOrdenamos con QuickSort\n");
+
+  /*ordenamos con QS*/
+  QS(v, 0, LVECT-1); 
+  printvec(v); 
+  printf("\nVector ordenado\n");
+  printf("Valor de p: %d\nValor de k: %d\nValor del k-esimo elemento: %d\n", p, k, v[k]); 
+
+
+  pk(v, p, k, resul);
+
+}
+
+
+
+/* Tomamos como pivote de QS el elemento k-esimo. 

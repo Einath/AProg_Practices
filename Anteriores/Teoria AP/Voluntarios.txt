@@ -1,0 +1,7 @@
+Tema 5
+
++Ejercicio 76?
+
++Problema del caballo: Implementarlo teniendo en cuenta que hay que visitar una serie de casillas consecutivamente
+
++Dadas dos casillas (origen y destino) hallar el camino mínimo entre ellas (salto de caballo)

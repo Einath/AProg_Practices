@@ -1,0 +1,14 @@
+// Datos de la Practica 3 - Ejemplo básico
+//El numero de temporadas y el presupuesto inicial deben pedirse por teclado 
+NG	12
+NC	20
+NA	15
+G0	1 
+C0	1 
+A0	1
+BG	4
+BC	8
+BA	15
+PG	10
+PC	15
+PA	30

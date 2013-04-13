@@ -1,0 +1,69 @@
+\documentclass[titlepage,12pt]{article}
+\usepackage{titlepic}
+\title{Ampliaci\'on de Programaci\'on\\Pr\'actica 1}
+\author{Ra\'ul Reguillo Carmona}
+\titlepic{\includegraphics[width=300pt]{./img/logo_escuela.png}}
+\date{}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{capt-of}
+\usepackage{graphicx}
+\usepackage[pdftex,colorlinks,backref,a4paper,bookmarks=true,bookmarksnumbered=true,linkcolor=blue,citecolor=red]{hyperref}
+\oddsidemargin 0in
+\textwidth 6.40in
+\parindent=3em
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+
+\newpage
+
+\listoffigures
+\newpage
+
+\section{Enunciado del problema}
+\textbf{Jon Nieve}, ascendido a oficial, está al mando de un grupo de \textbf{N} soldados ordenados por edad. Ha ideado una descabellada formación militar que consiste en defender en fila india siguiendo dicho orden. Su objetivo es mentir sobre su edad para colocarse en la posición dentral de la fila (la posición más segura en una posible batalla). Sin embargo la estrategia no es el único punto débil de Jon Nieve, la algoritmia también y Jon tiene un problema. Ha llegado un nuevo grupo de \textbf{M} soldados que también tenemos ordenados por edad. Jon Nieve necesita saber qué edad debe decir que tiene para colocarse en la posición central de la fila ordenada de soldados que resultaría si se mezclasen ambos grupos. La complejidad debe ser estrictamente menor que \textbf{$O(N+M+1)$}. 
+
+\section{Planteamiento y resolución del problema}
+
+\subsection{Estrategia}
+
+Debido a que se solicita que el orden de complejidad sea estrictamente menor que $O(N+M+1)$, impera la necesidad de una estrategia tipo \textit{Divide y Vencerás}, aunque hay otros muchos métodos, más sencillos, intuitivos y fáciles de implementar que dan solución al problema, nunca cumplirían la restricción indicada, al menos para valores altos de N y M. 
+
+Como se podrá ver, la estrategia escogida permite hallar la solución en pocos \textit{saltos} independientemente de los valores de N y M. Pasa a relatarse a continuación.  
+
+\subsection{Planteamiento}
+
+Para plantear el problema, a su vez, se ha dividido en las partes que se indican en las siguientes subsecciones con el fin de simplificarlo y estructurarlo. En primer lugar se resolvió el problema de generar los números (es decir, las edades de los soldados a cargo de Jon) así como las estructuras escogidas para albergarlos. Después se fue desgranando la función que recursivamente busca la solución. 
+
+\subsubsection{Parte inicial}
+
+El problema denota una parte inicial que no es maś que la inicialización de los datos. Existen dos conjuntos de soldados, ordenados por edad, entre los cuales Jon debe calcular su edad para quedarse en el centro de todos ellos. En esta primera parte inicial, se deben declarar dichos datos, así como ordenarlos. 
+
+Para ello, se ha hecho uso de números aleatorios acotados en una determinada franja de edad: entre 15 y 34. Dados N y M, se definirán las estructuras necesarias para almacenar a todos los soldados. A efectos de código, se declaran N y M como constantes y en base a éstos se acotan dos vectores X e Y. Dichos vectores son rellenados con los números aleatorios anteriormente citados y después se ordenan, usando cualquier método de ordenación conocido, en este caso, \textit{Quicksort}. 
+
+Una vez tenemos los dos vectores, representando en cada una de sus posiciones un soldado de cierta edad y ordenados crecientemente, puede dar comienzo el problema. 
+
+\subsubsection{Función principal y casos base}
+
+Si abstraemos el problema de colocarse en el centro de dos vectores antes de que estos sean mezclados, lo que debemos hacer es adivinar la mediana del vector resultante. 
+
+\subsection{Orden de complejidad}
+
+ \{Cálculo de orden de complejidad\}
+
+\section{Ejemplo}
+
+\section{Conclusiones}
+
+
+
+
+
+
+\end{document}
+
+
+
+ 

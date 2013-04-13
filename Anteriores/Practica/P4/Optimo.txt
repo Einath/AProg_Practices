@@ -1,0 +1,18 @@
+C0=100
+D0=100
+P0=1
+
+	comprar		vender		proximo
+
+P1) 	M4		M1		P4
+P2)	M1		M4		P5
+P3) 	M3		M1		P5
+P4)	M1		M2		P1
+P5) 	M1		M4		P2
+
+
+
+	P		D		M1 M2 M3 M4
+
+1)	1		1		0  0  0	 33
+2)	4		

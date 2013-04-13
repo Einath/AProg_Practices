@@ -1,0 +1,23 @@
+// Datos de la Practica 4 - Ejemplo básico
+// El número de días T y el capital inicial D deben pedirse por teclado
+// No debéis modificar la estructura de este fichero 
+//--------------------------------------------------
+//Capacidad del barco
+C	100
+//Número de Puertos
+P	5
+// Distancia de cada puerto a los demás sin redundancia
+//	P2	P3	P4	P5
+P1-Pi	3	3	2	6
+P2-Pi	-	2	4	1
+P3-Pi	-	-	5	3
+P4-Pi	-	-	-	4
+// Numero de mercancías (productos) distintas
+M  	4
+// Precio de cada mercancía en cada puerto
+//	M1	M2	M3	M4
+M-P1	10	8	5	3
+M-P2	6	7	11	15
+M-P3	8	4	3	6
+M-P4	2	12	10	7
+M-P5	4	5	6	8

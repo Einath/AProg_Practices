@@ -1,0 +1,5 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Enunciado del problema}{3}{section.1}
+\contentsline {section}{\numberline {2}Planteamiento y resoluci\IeC {\'o}n del problema}{3}{section.2}
+\contentsline {section}{\numberline {3}Ejemplo}{3}{section.3}
+\contentsline {section}{\numberline {4}Conclusiones}{3}{section.4}

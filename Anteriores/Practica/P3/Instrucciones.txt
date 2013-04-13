@@ -1,0 +1,8 @@
+1) Situarse en el directorio P3 que contiene el archivo makefile con un intérprete de comandos. 
+2) Ejecutar $> make
+3) Ejecutar ./exec/P3
+4) El programa pedirá los datos de Presupuesto y Número de temporadas
+5) Mostrará por pantalla temporada a temporada los datos optimizados. 
+	- Comentado en el código se encuentran las directrices tomadas para llevar a cabo la optimización
+
+La práctica ha sido realizada por el alumno Raúl Reguillo Carmona, del grupo 4 de prácticas y A de teoría. 

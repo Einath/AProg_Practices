@@ -1,0 +1,16 @@
+Para ejecutar la práctica, basta con acceder al directorio mediante un intérprete de comandos y ejecutar $>make. Una vez compilado todo, se ejecutará mediante el comando $>./exec/P2 
+
+El programa pedirá dos parámetros, k y p. Una vez introducidos estos parámetros se ejecutará el algoritmo. 
+
+Se visualizarán por pantalla en total tres series de números:
+
+1- La primera serie será de veinte números aleatorios y desordenados comprendidos entre 0 y 999. 
+
+2- La segunda serie será una copia de la primera, ordenada mediante QuickSort, mostrada con el fin de comparar resultados en la solución. 
+
+3- La última de las series será de p+1 números, comprendiendo los p más pŕoximos al k-ésimo elemento y al propio elemento k. 
+
+
+NOTA:
+
+Se han encontrado fallos a la hora de ejecutarlo. Funciona correctamente la mayor parte de las veces pero en ocasiones en los elementos próximos superiores al k-ésimo elemento, se dan datos muy distantes. A la hora de depurar no he podido aislar el fallo aunque pienso que quizá pueda tener algo que ver con el método Divide. Cuando en la serie original se dan elementos repetidos, el programa falla ocasionalmente. 

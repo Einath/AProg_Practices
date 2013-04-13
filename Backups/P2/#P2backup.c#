@@ -1,0 +1,708 @@
+Welcome to the Emacs shell
+
+~/Dropbox/Virtual Machine/AProg/P2/src $ make
+make: *** No se especificó ningún objetivo y no se encontró ningún makefile.  Alto.
+~/Dropbox/Virtual Machine/AProg/P2/src $ cd ..
+~/Dropbox/Virtual Machine/AProg/P2 $  make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/make
+./exec/make: command not found
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+20	BHORASH	500	6300	0	16300
+28	ASTAPOR	850	10000	4000	22300
+46	MEEREEN	1390	8000	15300	15000
+49	YUNKAI	1990	2900	4170	13730
+63	CAMP	1990	0	27860	-14130
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+12	ASTAPOR	350	10000	0	20000
+30	MEEREEN	890	8000	6300	21700
+40	BHORASH	1390	6300	8900	19100
+46	YUNKAI	1990	2900	8340	13660
+60	CAMP	1990	0	27860	-14200
+~/Dropbox/Virtual Machine/AProg/P2 $ mkdir ../../Backups/P2
+~/Dropbox/Virtual Machine/AProg/Backups/P2 $ make
+make: *** No se especificó ningún objetivo y no se encontró ningún makefile.  Alto.
+~/Dropbox/Virtual Machine/AProg/Backups/P2 $ cd .. 
+~/Dropbox/Virtual Machine/AProg/Backups $ cd ..
+~/Dropbox/Virtual Machine/AProg $ cd P2/
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+12	ASTAPOR	350	10000	0	20000
+20	BHORASH	850	6300	2800	23500
+30	MEEREEN	1390	8000	8500	23000
+33	YUNKAI	1990	2900	4170	21730
+47	CAMP	1990	0	27860	-6130
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+src/Daenerys.c: In function ‘selection_var1’:
+src/Daenerys.c:285: error: expected ‘}’ before ‘else’
+make: *** [DaenerysTryp] Error 1
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+violación de segmento
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+12	ASTAPOR	350	10000	0	20000
+20	BHORASH	850	6300	2800	23500
+30	MEEREEN	1390	8000	8500	23000
+33	YUNKAI	1990	2900	4170	21730
+47	CAMP	1990	0	27860	-6130
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+5 i_min
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+12	ASTAPOR	350	10000	0	20000
+20	BHORASH	850	6300	2800	23500
+30	MEEREEN	1390	8000	8500	23000
+33	YUNKAI	1990	2900	4170	21730
+47	CAMP	1990	0	27860	-6130
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+5 i_min
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+12	ASTAPOR	350	10000	0	20000
+20	BHORASH	850	6300	2800	23500
+30	MEEREEN	1390	8000	8500	23000
+33	YUNKAI	1990	2900	4170	21730
+47	CAMP	1990	0	27860	-6130
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+12	ASTAPOR	350	10000	0	20000
+20	BHORASH	850	6300	2800	23500
+26	YUNKAI	1450	2900	5100	21300
+29	MEEREEN	1990	8000	4350	24950
+38	CAMP	1990	0	17910	7040
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+src/Daenerys.c: In function ‘selection_var1’:
+src/Daenerys.c:279: error: ‘sol’ undeclared (first use in this function)
+src/Daenerys.c:279: error: (Each undeclared identifier is reported only once
+src/Daenerys.c:279: error: for each function it appears in.)
+make: *** [DaenerysTryp] Error 1
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+src/Daenerys.c: In function ‘selection_var1’:
+src/Daenerys.c:276: error: ‘n’ undeclared (first use in this function)
+src/Daenerys.c:276: error: (Each undeclared identifier is reported only once
+src/Daenerys.c:276: error: for each function it appears in.)
+src/Daenerys.c:277: error: expected ‘;’ before ‘if’
+make: *** [DaenerysTryp] Error 1
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+12	ASTAPOR	350	10000	0	20000
+20	BHORASH	850	6300	2800	23500
+26	YUNKAI	1450	2900	5100	21300
+29	MEEREEN	1990	8000	4350	24950
+38	CAMP	1990	0	17910	7040
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	2	9	14	12
+2	0	1	6	8
+9	1	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+2	BHORASH	500	6300	0	16300
+3	MEEREEN	1040	8000	500	23800
+6	YUNKAI	1640	2900	3120	23580
+13	ASTAPOR	1990	10000	11480	22100
+25	CAMP	1990	0	23880	-1780
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+12	ASTAPOR	350	10000	0	20000
+20	BHORASH	850	6300	2800	23500
+26	YUNKAI	1450	2900	5100	21300
+29	MEEREEN	1990	8000	4350	24950
+38	CAMP	1990	0	17910	7040
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+/tmp/ccJVvrGe.o: In function `voraz':
+Daenerys.c:(.text+0x857): undefined reference to `completo'
+collect2: ld returned 1 exit status
+make: *** [DaenerysTryp] Error 1
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+violación de segmento
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+violación de segmento
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+12	ASTAPOR	350	10000	0	20000
+20	BHORASH	850	6300	2800	23500
+26	YUNKAI	1450	2900	5100	21300
+29	MEEREEN	1990	8000	4350	24950
+38	CAMP	1990	0	17910	7040
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+/tmp/ccqwD5gg.o: In function `voraz':
+Daenerys.c:(.text+0x848): undefined reference to `selection_var2'
+collect2: ld returned 1 exit status
+make: *** [DaenerysTryp] Error 1
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+/tmp/cc85LVo9.o: In function `voraz':
+Daenerys.c:(.text+0x848): undefined reference to `selection_var2'
+collect2: ld returned 1 exit status
+make: *** [DaenerysTryp] Error 1
+~/Dropbox/Virtual Machine/AProg/P2 $ make
+gcc  -I include/ -o exec/DaenerysTryp src/Daenerys.c
+~/Dropbox/Virtual Machine/AProg/P2 $ ./exec/DaenerysTryp 
+Datos:
+N: 4
+S: 1
+X: 10000
+Distancias:
+0	20	9	14	12
+20	0	10	6	8
+9	10	0	3	18
+14	6	3	0	7
+12	8	18	7	0
+Recursos y Unidades:
+1	6300	500
+2	8000	540
+3	2900	600
+4	10000	350
+
+===========
+Seleccione:
+===========
+1. Variante 1
+2. Variante 2
+3. Variante 3
+=>1
+
+===========
+Seleccione:
+===========
+1. Algoritmo voraz 
+2. Backtracking 
+3. Prog. Dinamica 
+=>1
+== Algoritmo Voraz | Variante 1 ==
+
+=================================================
+Day	Place	Units	Gold	Spent	Balance
+=================================================
+0	CAMP	0	0	0	10000
+12	ASTAPOR	350	10000	0	20000
+20	BHORASH	850	6300	2800	23500
+26	YUNKAI	1450	2900	5100	21300
+29	MEEREEN	1990	8000	4350	24950
+38	CAMP	1990	0	17910	7040
+~/Dropbox/Virtual Machine/AProg/P2 $ 

@@ -1,0 +1,52 @@
+// DATOS DE PRUEBA PARA LA PRACTICA 3
+
+			N?mero	Beneficio	Precio
+GANADO (G) 	->	6	10		21
+CULTIVO (C)	->	12	19		16
+ARBOLEDA (A)	->	8	18		24
+
+Parcelas iniciales:
+G = 2
+C = 2
+A = 1
+
+
+// EJEMPLO
+// No es la solucion optima
+
+Temporadas = 4
+Presupuesto = 20
+G0 = 1  C0 = 2  A0 = 1
+
+Temporada 1
+-----------
+Compra CULTIVO  ->  G = 1   C = 3   A = 0,5  
+Presupuesto = 20 - 16 = 4
+Beneficio = 1 * 10 + 3 * 19 + 0,5 * 18 =  76
+Presupuesto = 4 + 76 = 80
+
+Temporada 2
+-----------   
+Compro ARBOLEDA -> G = 0,5   C = 3  A = 1,5
+Presupuesto = 80 - 24 = 56
+Beneficio = 0,5 * 10 + 3 * 19 + 1,5 * 18 = 89
+Presupuesto = 56 + 89 = 145
+
+Temporada 3
+-----------
+Compro GANADO -> G = 1,5   C = 2,5   A = 1,5
+Presupuesto = 145 - 21 = 124
+Beneficio = 1,5 * 10 + 2,5 * 19 + 1,5 * 18 = 89,5
+Presupuesto = 124 + 89,5 = 213,5
+
+Temporada 4
+-----------
+Compro CULTIVO -> G = 1,5   C = 3,5   A = 1
+Presupuesto = 213,5 - 16 = 197,5
+Beneficio = 1,5 * 10 + 3,5 * 19 + 1 * 18 = 99,5
+Presupuesto = 197,5 + 99,5 = 297
+
+SOLUCION
+--------
+COMPRAS: CULTIVO - ARBOLEDA - GANADO - CULTIVO
+PRESUPUESTO FINAL: 297
